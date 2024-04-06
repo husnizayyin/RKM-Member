@@ -23,8 +23,8 @@ class FormLogin extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               BaseFormGroupFieldAuth(
-                label: 'Email/No. Telepon',
-                hint: 'Masukkan email atau no. telepon anda',
+                label: 'Email or Telephone',
+                //hint: 'Insert email or phone number',
                 controller: controller.usernameController.value,
                 validator: (value) {
                   if (value!.isEmpty) {
@@ -37,7 +37,7 @@ class FormLogin extends StatelessWidget {
               const SizedBox(height: 15),
               BaseFormGroupFieldAuth(
                 label: 'Password',
-                hint: 'Masukkan password anda',
+                //hint: 'Masukkan password anda',
                 controller: controller.passwordController.value,
                 obscureText: controller.showPass.value,
                 suffixIcon: IconButton(

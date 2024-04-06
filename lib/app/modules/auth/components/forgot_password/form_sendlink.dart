@@ -25,7 +25,7 @@ class FormSendLink extends StatelessWidget {
                   ? 'Cek Whatsapp Anda'
                   : 'Cek Email Anda',
               size: 20,
-              bold: FontWeight.w600,
+              bold: FontWeight.w600, 
               color: Colors.white,
             ),
             Container(

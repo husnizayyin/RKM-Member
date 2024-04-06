@@ -5,7 +5,6 @@ import 'package:member_rkm/app/core/values/show_loading.dart';
 import 'package:member_rkm/app/core/values/snackbars.dart';
 import 'package:member_rkm/app/data/providers/forgot_password/identify_provider.dart';
 
-
 class IdentifyController extends GetxController {
   final IdentifyProvider identifyProvider;
 
@@ -46,8 +45,9 @@ class IdentifyController extends GetxController {
       Get.back();
       failedSnackbar(
         'Ups sepertinya terjadi kesalahan',
-        'code:(${e.response?.statusCode})',
+        'code:(${e.response?.statusMessage})',
       );
+      Get.back();
     }
   }
 }

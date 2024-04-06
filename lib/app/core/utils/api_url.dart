@@ -1,6 +1,6 @@
 class ApiUrl {
-  static const String baseUrl = 'http://10.0.2.235:8000/api';
-  static const String baseStorageUrl = 'http://10.0.2.235:8000/storage';
+  static const String baseUrl = 'https://member.rkm.co.id/api';
+  static const String baseStorageUrl = 'https://member.rkm.co.id/storage';
   static EndPoint endPoint = EndPoint();
   static StorageUrl storageUrl = StorageUrl();
 }
